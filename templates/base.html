@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+  ${self.base_head()}
+  ${self.base_body()}
+</html>
+
+<%def name="base_head()">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>demo</title>
+  ${self.base_css()}
+  ${self.extra_head()}
+</head>
+</%def>
+
+<%def name="base_css()">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.min.css">
+</%def>
+<%def name="extra_head()"></%def>
+<%def name="base_body()">
+<body>
+  ${self.header()}
+  <div class="container" id="content">
+    ${self.content()}
+  </div>
+  ${self.footer()}
+  ${self.base_script()}
+  ${self.bottom_script()}
+</body>
+</%def>
+<%def name="header()"></%def>
+<%def name="content()"></%def>
+<%def name="footer()"></%def>
+
+<%def name="base_script()">
+<script src="/static/js/jquery-2.1.4.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/moment.min.js"></script>
+<script src="/static/js/bootstrap-datetimepicker.min.js"></script>
+</%def>
+<%def name="bottom_script()"></%def>
